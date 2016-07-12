@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+
+<title>Beat Sequencer in HTML5</title>
+
+<link rel="stylesheet" href="css/sequencer.css" type="text/css" media="screen" />
+
+<script src="js/sequencer.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body onLoad="preloadImages()">
+
+<div id="content">
+
+    <h1>Beat Sequencer</h1>
+
+    <div id="sticker"></div>
+
+	<div id="editor">
+        <div id="numbers"></div>
+        <div id="labels"></div>
+        <div id="grid">
+            <div id="row4">
+                <div id="button4-1"><img id="img4-1" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-1')" onMouseUp="gridAction('img4-1')" /></div>
+                <div id="button4-2"><img id="img4-2" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-2')" onMouseUp="gridAction('img4-2')" /></div>
+                <div id="button4-3"><img id="img4-3" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-3')" onMouseUp="gridAction('img4-3')" /></div>
+                <div id="button4-4"><img id="img4-4" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-4')" onMouseUp="gridAction('img4-4')" /></div>
+                <div id="button4-5"><img id="img4-5" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-5')" onMouseUp="gridAction('img4-5')" /></div>
+                <div id="button4-6"><img id="img4-6" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-6')" onMouseUp="gridAction('img4-6')" /></div>
+                <div id="button4-7"><img id="img4-7" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-7')" onMouseUp="gridAction('img4-7')" /></div>
+                <div id="button4-8"><img id="img4-8" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-8')" onMouseUp="gridAction('img4-8')" /></div>
+                <div id="button4-9"><img id="img4-9" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-9')" onMouseUp="gridAction('img4-9')" /></div>
+                <div id="button4-10"><img id="img4-10" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-10')" onMouseUp="gridAction('img4-10')" /></div>
+                <div id="button4-11"><img id="img4-11" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-11')" onMouseUp="gridAction('img4-11')" /></div>
+                <div id="button4-12"><img id="img4-12" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-12')" onMouseUp="gridAction('img4-12')" /></div>
+                <div id="button4-13"><img id="img4-13" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-13')" onMouseUp="gridAction('img4-13')" /></div>
+                <div id="button4-14"><img id="img4-14" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-14')" onMouseUp="gridAction('img4-14')" /></div>
+                <div id="button4-15"><img id="img4-15" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-15')" onMouseUp="gridAction('img4-15')" /></div>
+                <div id="button4-16"><img id="img4-16" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img4-16')" onMouseUp="gridAction('img4-16')" /></div>
+            </div>
+            <div id="row3">
+                <div id="button3-1"><img id="img3-1" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-1')" onMouseUp="gridAction('img3-1')" /></div>
+                <div id="button3-2"><img id="img3-2" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-2')" onMouseUp="gridAction('img3-2')" /></div>
+                <div id="button3-3"><img id="img3-3" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-3')" onMouseUp="gridAction('img3-3')" /></div>
+                <div id="button3-4"><img id="img3-4" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-4')" onMouseUp="gridAction('img3-4')" /></div>
+                <div id="button3-5"><img id="img3-5" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-5')" onMouseUp="gridAction('img3-5')" /></div>
+                <div id="button3-6"><img id="img3-6" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-6')" onMouseUp="gridAction('img3-6')" /></div>
+                <div id="button3-7"><img id="img3-7" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-7')" onMouseUp="gridAction('img3-7')" /></div>
+                <div id="button3-8"><img id="img3-8" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-8')" onMouseUp="gridAction('img3-8')" /></div>
+                <div id="button3-9"><img id="img3-9" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-9')" onMouseUp="gridAction('img3-9')" /></div>
+                <div id="button3-10"><img id="img3-10" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-10')" onMouseUp="gridAction('img3-10')" /></div>
+                <div id="button3-11"><img id="img3-11" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-11')" onMouseUp="gridAction('img3-11')" /></div>
+                <div id="button3-12"><img id="img3-12" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-12')" onMouseUp="gridAction('img3-12')" /></div>
+                <div id="button3-13"><img id="img3-13" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-13')" onMouseUp="gridAction('img3-13')" /></div>
+                <div id="button3-14"><img id="img3-14" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-14')" onMouseUp="gridAction('img3-14')" /></div>
+                <div id="button3-15"><img id="img3-15" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-15')" onMouseUp="gridAction('img3-15')" /></div>
+                <div id="button3-16"><img id="img3-16" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img3-16')" onMouseUp="gridAction('img3-16')" /></div>
+            </div>
+            <div id="row2">
+                <div id="button2-1"><img id="img2-1" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-1')" onMouseUp="gridAction('img2-1')" /></div>
+                <div id="button2-2"><img id="img2-2" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-2')" onMouseUp="gridAction('img2-2')" /></div>
+                <div id="button2-3"><img id="img2-3" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-3')" onMouseUp="gridAction('img2-3')" /></div>
+                <div id="button2-4"><img id="img2-4" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-4')" onMouseUp="gridAction('img2-4')" /></div>
+                <div id="button2-5"><img id="img2-5" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-5')" onMouseUp="gridAction('img2-5')" /></div>
+                <div id="button2-6"><img id="img2-6" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-6')" onMouseUp="gridAction('img2-6')" /></div>
+                <div id="button2-7"><img id="img2-7" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-7')" onMouseUp="gridAction('img2-7')" /></div>
+                <div id="button2-8"><img id="img2-8" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-8')" onMouseUp="gridAction('img2-8')" /></div>
+                <div id="button2-9"><img id="img2-9" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-9')" onMouseUp="gridAction('img2-9')" /></div>
+                <div id="button2-10"><img id="img2-10" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-10')" onMouseUp="gridAction('img2-10')" /></div>
+                <div id="button2-11"><img id="img2-11" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-11')" onMouseUp="gridAction('img2-11')" /></div>
+                <div id="button2-12"><img id="img2-12" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-12')" onMouseUp="gridAction('img2-12')" /></div>
+                <div id="button2-13"><img id="img2-13" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-13')" onMouseUp="gridAction('img2-13')" /></div>
+                <div id="button2-14"><img id="img2-14" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-14')" onMouseUp="gridAction('img2-14')" /></div>
+                <div id="button2-15"><img id="img2-15" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-15')" onMouseUp="gridAction('img2-15')" /></div>
+                <div id="button2-16"><img id="img2-16" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img2-16')" onMouseUp="gridAction('img2-16')" /></div>
+            </div>
+            <div id="row1">
+                <div id="button1-1"><img id="img1-1" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-1')" onMouseUp="gridAction('img1-1')" /></div>
+                <div id="button1-2"><img id="img1-2" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-2')" onMouseUp="gridAction('img1-2')" /></div>
+                <div id="button1-3"><img id="img1-3" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-3')" onMouseUp="gridAction('img1-3')" /></div>
+                <div id="button1-4"><img id="img1-4" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-4')" onMouseUp="gridAction('img1-4')" /></div>
+                <div id="button1-5"><img id="img1-5" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-5')" onMouseUp="gridAction('img1-5')" /></div>
+                <div id="button1-6"><img id="img1-6" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-6')" onMouseUp="gridAction('img1-6')" /></div>
+                <div id="button1-7"><img id="img1-7" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-7')" onMouseUp="gridAction('img1-7')" /></div>
+                <div id="button1-8"><img id="img1-8" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-8')" onMouseUp="gridAction('img1-8')" /></div>
+                <div id="button1-9"><img id="img1-9" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-9')" onMouseUp="gridAction('img1-9')" /></div>
+                <div id="button1-10"><img id="img1-10" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-10')" onMouseUp="gridAction('img1-10')" /></div>
+                <div id="button1-11"><img id="img1-11" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-11')" onMouseUp="gridAction('img1-11')" /></div>
+                <div id="button1-12"><img id="img1-12" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-12')" onMouseUp="gridAction('img1-12')" /></div>
+                <div id="button1-13"><img id="img1-13" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-13')" onMouseUp="gridAction('img1-13')" /></div>
+                <div id="button1-14"><img id="img1-14" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-14')" onMouseUp="gridAction('img1-14')" /></div>
+                <div id="button1-15"><img id="img1-15" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-15')" onMouseUp="gridAction('img1-15')" /></div>
+                <div id="button1-16"><img id="img1-16" src="images/button-off.png" alt="button" onMouseDown="buttonDepress('img1-16')" onMouseUp="gridAction('img1-16')" /></div>
+            </div>
+    </div>
+        <div id="lights">
+            <div id="light1"><img id="imgl-1" src="images/light-off.png" alt="light" /></div>
+            <div id="light2"><img id="imgl-2" src="images/light-off.png" alt="light" /></div>
+            <div id="light3"><img id="imgl-3" src="images/light-off.png" alt="light" /></div>
+            <div id="light4"><img id="imgl-4" src="images/light-off.png" alt="light" /></div>
+            <div id="light5"><img id="imgl-5" src="images/light-off.png" alt="light" /></div>
+            <div id="light6"><img id="imgl-6" src="images/light-off.png" alt="light" /></div>
+            <div id="light7"><img id="imgl-7" src="images/light-off.png" alt="light" /></div>
+            <div id="light8"><img id="imgl-8" src="images/light-off.png" alt="light" /></div>
+            <div id="light9"><img id="imgl-9" src="images/light-off.png" alt="light" /></div>
+            <div id="light10"><img id="imgl-10" src="images/light-off.png" alt="light" /></div>
+            <div id="light11"><img id="imgl-11" src="images/light-off.png" alt="light" /></div>
+            <div id="light12"><img id="imgl-12" src="images/light-off.png" alt="light" /></div>
+            <div id="light13"><img id="imgl-13" src="images/light-off.png" alt="light" /></div>
+            <div id="light14"><img id="imgl-14" src="images/light-off.png" alt="light" /></div>
+            <div id="light15"><img id="imgl-15" src="images/light-off.png" alt="light" /></div>
+            <div id="light16"><img id="imgl-16" src="images/light-off.png" alt="light" /></div>
+        </div>
+        <div id="run">
+            <form id="runForm" action="javascript:runLoop()">
+            <div>
+            <input id="runButton" type="image" src="images/run-deactivated.png" alt="Click to run or stop." />
+            </div>
+            </form>
+        </div>
+        <div id="tempoBox" style="">
+        	<input id="tempoValue" type="text" value="120" onKeyPress="return numbersonly(event, false)" onBlur="tempoChange()" />bpm
+        </div>
+    </div>
+
+    <div id="info">
+        <div id="about">
+
+            <h2>About</h2>
+
+            <p>A drum machine! Click the buttons you want to play while the loop is going. Then press &ldquo;Run&rdquo; and listen to the beat magic. You can change the tempo, too, if you'd like&mdash;just stop the loop (by pressing &ldquo;Run&rdquo; again) and then edit the bpm.</p>
+
+            <!--<p>Right now the sequencer only works in <a href="http://www.apple.com/safari/">Safari</a> and <a href="http://www.firefox.com/">Firefox</a> because Chrome doesn't support aif/wav files yet&mdash;and Internet Explorer is&hellip; well&hellip; Internet Explorer. On the bright side, there's no flash or other plugin involved. It's all HTML 5 and JavaScript.</p>-->
+
+            <p style="margin-bottom: 2em">Created by <a href="https://github.com/jsejcksn/">Jesse Jackson</a>.</p>
+
+        </div>
+
+    </div>
+
+    <div class="nodisplay">
+        <audio id="b1" src="samples/bass.wav" autobuffer="autobuffer">Try using an HTML 5-enabled browser like <a href="http://www.apple.com/safari/download/">Safari</a> to make this page work.</audio>
+        <audio id="s1" src="samples/snare.wav" autobuffer="autobuffer"></audio>
+        <audio id="ch1" src="samples/hhc.wav" autobuffer="autobuffer"></audio>
+        <audio id="oh1" src="samples/hho.wav" autobuffer="autobuffer"></audio><br />
+
+        <audio id="b2" src="samples/bass.wav"></audio>
+        <audio id="s2" src="samples/snare.wav"></audio>
+        <audio id="ch2" src="samples/hhc.wav"></audio>
+        <audio id="oh2" src="samples/hho.wav"></audio><br />
+
+        <audio id="b3" src="samples/bass.wav"></audio>
+        <audio id="s3" src="samples/snare.wav"></audio>
+        <audio id="ch3" src="samples/hhc.wav"></audio>
+        <audio id="oh3" src="samples/hho.wav"></audio><br />
+
+        <audio id="b4" src="samples/bass.wav"></audio>
+        <audio id="s4" src="samples/snare.wav"></audio>
+        <audio id="ch4" src="samples/hhc.wav"></audio>
+        <audio id="oh4" src="samples/hho.wav"></audio><br />
+
+        <audio id="b5" src="samples/bass.wav"></audio>
+        <audio id="s5" src="samples/snare.wav"></audio>
+        <audio id="ch5" src="samples/hhc.wav"></audio>
+        <audio id="oh5" src="samples/hho.wav"></audio><br />
+
+        <audio id="b6" src="samples/bass.wav"></audio>
+        <audio id="s6" src="samples/snare.wav"></audio>
+        <audio id="ch6" src="samples/hhc.wav"></audio>
+        <audio id="oh6" src="samples/hho.wav"></audio><br />
+
+        <audio id="b7" src="samples/bass.wav"></audio>
+        <audio id="s7" src="samples/snare.wav"></audio>
+        <audio id="ch7" src="samples/hhc.wav"></audio>
+        <audio id="oh7" src="samples/hho.wav"></audio><br />
+
+        <audio id="b8" src="samples/bass.wav"></audio>
+        <audio id="s8" src="samples/snare.wav"></audio>
+        <audio id="ch8" src="samples/hhc.wav"></audio>
+        <audio id="oh8" src="samples/hho.wav"></audio><br />
+
+        <audio id="b9" src="samples/bass.wav"></audio>
+        <audio id="s9" src="samples/snare.wav"></audio>
+        <audio id="ch9" src="samples/hhc.wav"></audio>
+        <audio id="oh9" src="samples/hho.wav"></audio><br />
+
+        <audio id="b10" src="samples/bass.wav"></audio>
+        <audio id="s10" src="samples/snare.wav"></audio>
+        <audio id="ch10" src="samples/hhc.wav"></audio>
+        <audio id="oh10" src="samples/hho.wav"></audio><br />
+
+        <audio id="b11" src="samples/bass.wav"></audio>
+        <audio id="s11" src="samples/snare.wav"></audio>
+        <audio id="ch11" src="samples/hhc.wav"></audio>
+        <audio id="oh11" src="samples/hho.wav"></audio><br />
+
+        <audio id="b12" src="samples/bass.wav"></audio>
+        <audio id="s12" src="samples/snare.wav"></audio>
+        <audio id="ch12" src="samples/hhc.wav"></audio>
+        <audio id="oh12" src="samples/hho.wav"></audio><br />
+
+        <audio id="b13" src="samples/bass.wav"></audio>
+        <audio id="s13" src="samples/snare.wav"></audio>
+        <audio id="ch13" src="samples/hhc.wav"></audio>
+        <audio id="oh13" src="samples/hho.wav"></audio><br />
+
+        <audio id="b14" src="samples/bass.wav"></audio>
+        <audio id="s14" src="samples/snare.wav"></audio>
+        <audio id="ch14" src="samples/hhc.wav"></audio>
+        <audio id="oh14" src="samples/hho.wav"></audio><br />
+
+        <audio id="b15" src="samples/bass.wav"></audio>
+        <audio id="s15" src="samples/snare.wav"></audio>
+        <audio id="ch15" src="samples/hhc.wav"></audio>
+        <audio id="oh15" src="samples/hho.wav"></audio><br />
+
+        <audio id="b16" src="samples/bass.wav"></audio>
+        <audio id="s16" src="samples/snare.wav"></audio>
+        <audio id="ch16" src="samples/hhc.wav"></audio>
+        <audio id="oh16" src="samples/hho.wav"></audio>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,594 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #D9D9D9;
+	color: #333333;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	}
+
+a, img, input {
+	border: 0;
+	}
+
+a {
+	color: #CC0000;
+	text-decoration: none;
+	}
+
+h1 {
+	font-size: 60px;
+	position: relative;
+	left: 54px;
+	margin: 0 0 14px 0;
+	max-width: 700px;
+	}
+
+h2 {
+	margin-bottom: 0;
+	}
+
+h3 {
+	margin-bottom: 0;
+	}
+
+#about {
+	width: 600px;
+	float: left;
+	}
+
+#content {
+	width: 1000px;
+	position: relative;
+	margin: 70px auto;
+	}
+
+#editor {
+	position: relative;
+	width: 1000px;
+	}
+
+#grid {
+	width: 946px;
+	height: 280px;
+	float: right;
+	clear: right;
+	position: relative;
+	margin-bottom: 0;
+	}
+
+#info {
+	position: relative;
+	top: 50px;
+	left: 54px;
+	font-size: 90%;
+	max-width: 800px;
+	}
+
+#labels {
+	background: url(../images/labels.png) no-repeat;
+	width: 51px;
+	height: 268px;
+	float: left;
+	clear: right;
+	}
+
+#lights {
+	width: 946px;
+	height: 12px;
+	position: relative;
+	float: right;
+	clear: right;
+	margin-top: -10px;
+	}
+
+#numbers {
+	background: url(../images/numbers.png) no-repeat;
+	width: 946px;
+	height: 18px;
+	float: right;
+	}
+
+#row1 {
+	background: url(../images/row.png) no-repeat;
+	width: 946px;
+	height: 64px;
+	position: absolute;
+	top: 204px;
+	left: 0;
+	}
+
+#row2 {
+	background: url(../images/row.png) no-repeat;
+	width: 946px;
+	height: 64px;
+	position: absolute;
+	top: 136px;
+	left: 0;
+	}
+
+#row3 {
+	background: url(../images/row.png) no-repeat;
+	width: 946px;
+	height: 64px;
+	position: absolute;
+	top: 68px;
+	left: 0;
+	}
+
+#row4 {
+	background: url(../images/row.png) no-repeat;
+	width: 946px;
+	height: 64px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+
+#run {
+	width: 122px;
+	height: 57px;
+	position: relative;
+	top: 25px;
+	left: 54px;
+	clear: both;
+	}
+
+#sticker {
+	background: url(../images/html5-sticker.png) no-repeat;
+	width: 71px;
+	height: 71px;
+	position: absolute;
+	top: -38px;;
+	left: 493px;
+	}
+
+#tempoBox {
+	position: relative;
+	top: -33px;
+	left: 180px;
+	max-width: 200px;
+	}
+
+#tempoValue {
+	font-size: 1em;
+	width: 35px;
+	border: 0;
+	background: #BBBBBB;
+	text-align: right;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	}
+
+.nodisplay {
+	display: none;
+	}
+
+
+
+
+
+/* These are the buttons in the editor */
+
+#button1-1 {
+	position: absolute;
+	left: 2px;
+	}
+
+#button1-2 {
+	position: absolute;
+	left: 60px;
+	}
+
+#button1-3 {
+	position: absolute;
+	left: 118px;
+	}
+
+#button1-4 {
+	position: absolute;
+	left: 176px;
+	}
+
+#button1-5 {
+	position: absolute;
+	left: 239px;
+	}
+
+#button1-6 {
+	position: absolute;
+	left: 297px;
+	}
+
+#button1-7 {
+	position: absolute;
+	left: 355px;
+	}
+
+#button1-8 {
+	position: absolute;
+	left: 413px;
+	}
+
+#button1-9 {
+	position: absolute;
+	left: 476px;
+	}
+
+#button1-10 {
+	position: absolute;
+	left: 534px;
+	}
+
+#button1-11 {
+	position: absolute;
+	left: 592px;
+	}
+
+#button1-12 {
+	position: absolute;
+	left: 650px;
+	}
+
+#button1-13 {
+	position: absolute;
+	left: 713px;
+	}
+
+#button1-14 {
+	position: absolute;
+	left: 771px;
+	}
+
+#button1-15 {
+	position: absolute;
+	left: 829px;
+	}
+
+#button1-16 {
+	position: absolute;
+	left: 887px;
+	}
+
+
+
+
+
+#button2-1 {
+	position: absolute;
+	left: 2px;
+	}
+
+#button2-2 {
+	position: absolute;
+	left: 60px;
+	}
+
+#button2-3 {
+	position: absolute;
+	left: 118px;
+	}
+
+#button2-4 {
+	position: absolute;
+	left: 176px;
+	}
+
+#button2-5 {
+	position: absolute;
+	left: 239px;
+	}
+
+#button2-6 {
+	position: absolute;
+	left: 297px;
+	}
+
+#button2-7 {
+	position: absolute;
+	left: 355px;
+	}
+
+#button2-8 {
+	position: absolute;
+	left: 413px;
+	}
+
+#button2-9 {
+	position: absolute;
+	left: 476px;
+	}
+
+#button2-10 {
+	position: absolute;
+	left: 534px;
+	}
+
+#button2-11 {
+	position: absolute;
+	left: 592px;
+	}
+
+#button2-12 {
+	position: absolute;
+	left: 650px;
+	}
+
+#button2-13 {
+	position: absolute;
+	left: 713px;
+	}
+
+#button2-14 {
+	position: absolute;
+	left: 771px;
+	}
+
+#button2-15 {
+	position: absolute;
+	left: 829px;
+	}
+
+#button2-16 {
+	position: absolute;
+	left: 887px;
+	}
+
+
+
+
+
+#button3-1 {
+	position: absolute;
+	left: 2px;
+	}
+
+#button3-2 {
+	position: absolute;
+	left: 60px;
+	}
+
+#button3-3 {
+	position: absolute;
+	left: 118px;
+	}
+
+#button3-4 {
+	position: absolute;
+	left: 176px;
+	}
+
+#button3-5 {
+	position: absolute;
+	left: 239px;
+	}
+
+#button3-6 {
+	position: absolute;
+	left: 297px;
+	}
+
+#button3-7 {
+	position: absolute;
+	left: 355px;
+	}
+
+#button3-8 {
+	position: absolute;
+	left: 413px;
+	}
+
+#button3-9 {
+	position: absolute;
+	left: 476px;
+	}
+
+#button3-10 {
+	position: absolute;
+	left: 534px;
+	}
+
+#button3-11 {
+	position: absolute;
+	left: 592px;
+	}
+
+#button3-12 {
+	position: absolute;
+	left: 650px;
+	}
+
+#button3-13 {
+	position: absolute;
+	left: 713px;
+	}
+
+#button3-14 {
+	position: absolute;
+	left: 771px;
+	}
+
+#button3-15 {
+	position: absolute;
+	left: 829px;
+	}
+
+#button3-16 {
+	position: absolute;
+	left: 887px;
+	}
+
+
+
+
+
+#button4-1 {
+	position: absolute;
+	left: 2px;
+	}
+
+#button4-2 {
+	position: absolute;
+	left: 60px;
+	}
+
+#button4-3 {
+	position: absolute;
+	left: 118px;
+	}
+
+#button4-4 {
+	position: absolute;
+	left: 176px;
+	}
+
+#button4-5 {
+	position: absolute;
+	left: 239px;
+	}
+
+#button4-6 {
+	position: absolute;
+	left: 297px;
+	}
+
+#button4-7 {
+	position: absolute;
+	left: 355px;
+	}
+
+#button4-8 {
+	position: absolute;
+	left: 413px;
+	}
+
+#button4-9 {
+	position: absolute;
+	left: 476px;
+	}
+
+#button4-10 {
+	position: absolute;
+	left: 534px;
+	}
+
+#button4-11 {
+	position: absolute;
+	left: 592px;
+	}
+
+#button4-12 {
+	position: absolute;
+	left: 650px;
+	}
+
+#button4-13 {
+	position: absolute;
+	left: 713px;
+	}
+
+#button4-14 {
+	position: absolute;
+	left: 771px;
+	}
+
+#button4-15 {
+	position: absolute;
+	left: 829px;
+	}
+
+#button4-16 {
+	position: absolute;
+	left: 887px;
+	}
+
+
+
+
+
+/* These are the buttons in the editor */
+
+#light1 {
+	position: absolute;
+	left: 25px;
+	}
+
+#light2 {
+	position: absolute;
+	left: 83px;
+	}
+
+#light3 {
+	position: absolute;
+	left: 141px;
+	}
+
+#light4 {
+	position: absolute;
+	left: 199px;
+	}
+
+#light5 {
+	position: absolute;
+	left: 262px;
+	}
+
+#light6 {
+	position: absolute;
+	left: 320px;
+	}
+
+#light7 {
+	position: absolute;
+	left: 378px;
+	}
+
+#light8 {
+	position: absolute;
+	left: 436px;
+	}
+
+#light9 {
+	position: absolute;
+	left: 499px;
+	}
+
+#light10 {
+	position: absolute;
+	left: 557px;
+	}
+
+#light11 {
+	position: absolute;
+	left: 615px;
+	}
+
+#light12 {
+	position: absolute;
+	left: 673px;
+	}
+
+#light13 {
+	position: absolute;
+	left: 736px;
+	}
+
+#light14 {
+	position: absolute;
+	left: 794px;
+	}
+
+#light15 {
+	position: absolute;
+	left: 852px;
+	}
+
+#light16 {
+	position: absolute;
+	left: 910px;
+	}
+
+
