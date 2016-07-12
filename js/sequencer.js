@@ -1,6 +1,6 @@
 // JavaScript Document
 
-var url = "//jsejcksn.github.io/beat-sequencer-html5/images/";
+var url = "https://jsejcksn.github.io/beat-sequencer-html5/images/";
 
 function preloadImages() {
 
